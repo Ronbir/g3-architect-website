@@ -11,6 +11,9 @@
 .display-flex{
     display: flex;
 }
+.text-primary{
+    color: #FF900E;
+}
 /* dark-2 */
 .text-gray{
     color: #424242;
@@ -23,6 +26,33 @@
 }
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
+}
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.2em;
+    border: none;
+}
+
+.section-tittle{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.fact-number{
+    font-weight: 500;
+    font-size: 3rem;
+}
+.fact-name{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #727272;
+}
+.main{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 /* header styles */
 /* navbar related style */
@@ -42,4 +72,82 @@
 .nav-bar, .banner{
     max-width: 1440px;
     margin: 0 auto;
+}
+
+/* banner related styles */
+.banner-content{
+    max-width: 862px;
+    justify-content: center;
+    text-align: center;
+    margin: 0  auto;
+    margin-bottom: 20px;}
+
+
+.banner-descripton{
+    font-size: 1.25rem;
+}
+.banner-image{
+    width: 100%;
+}
+/* feature related styles */
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.team{
+    align-items: center;
+}
+.our-features{
+    margin-left: 130px;
+    max-width: 537px;
+}
+.feature-tittle{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+#quick-list{
+    font-weight: 500;
+
+}
+/* feature will enjoy */
+.fact{
+    max-width: 15rem;
+    max-height: 15rem;
+    border: 1px solid #FF900E;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.facts-container{
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+
+
+/* .responsive media quarry */
+@media screen and (max-width:576px) {
+    .nav-bar,
+    .nav-links,
+    .team{
+        flex-direction: column;
+
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+}
+/* media quarry for medium device */
+@media screen and (min-width:576px) and (max-width:992px)  {
+    .team{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-left: 20px ;
+    }
 }
