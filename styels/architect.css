@@ -111,7 +111,7 @@
 
 }
 /* feature will enjoy */
-.fact{
+.fact-card{
     max-width: 15rem;
     max-height: 15rem;
     border: 1px solid #FF900E;
@@ -121,8 +121,13 @@
     
 }
 .facts-container{
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 100px;
+}
+
+.fact-discription{
+    max-width: ;
 }
 
 
