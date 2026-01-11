@@ -112,8 +112,40 @@
 
 }
 /* feature will enjoy */
-.feature-image{
-    width: 
+.features{
+    gap: 140px;
+    align-items: center;
+}
+#feature-section-tittle{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom:20px ;
+}
+
+.feature-card .feature-card-tittle{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.features-image img{
+    width:100%; 
+}
+#experience-badge{
+    padding: 40px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-left: -70px;
+    margin-top: -70px;
+}
+#experience-year{
+    font-weight: 700;
+    font-size: 4rem;
 }
 .fact-card{
     max-width: 15rem;
@@ -166,11 +198,13 @@
 @media screen and (max-width:576px) {
     .nav-bar,
     .nav-links,
-    .team
-    
+    .team,
+    .features
     {
         flex-direction: column;
-
+    }
+    .nav-bar{
+        justify-items: center;
     }
     .team-img-container,
     .facts-container, 
@@ -184,8 +218,12 @@
         gap: 1.35rem;
         
     }
-    .feature-image{
-        width: 0 auto;
+    .features-image img{
+        width: 100%;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
     .our-features{
         margin-left: 20px;
@@ -199,11 +237,16 @@
 }
 /* media quarry for medium device */
 @media screen and (min-width:576px) and (max-width:992px)  {
-    .team{
+    .team,
+    .features{
         flex-direction: column;
     }
     .our-features{
         margin-left: 20px ;
+    }
+     #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px; 
     }
     .sponsors-companies,
     .facts-container{
